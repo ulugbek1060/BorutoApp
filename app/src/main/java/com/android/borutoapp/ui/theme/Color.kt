@@ -18,35 +18,39 @@ val ShimmerLightGrey = Color(0xFFF1F1F1)
 val ShimmerMediumGrey = Color(0xFFE3E3E3)
 val ShimmerDarkGrey = Color(0xFF1D1D1D)
 
+val Colors.statusBarColor
+   @Composable
+   get() = if (isSystemInDarkTheme()) Color.Black else Purple700
+
 val Colors.welcomeScreenBackgroundColor
-    @Composable
-    get() = if (isSystemInDarkTheme()) Color.Black else Color.White
+   @Composable
+   get() = if (isSystemInDarkTheme()) Color.Black else Color.White
 
 val Colors.titleColor
-    @Composable
-    get() = if (isSystemInDarkTheme()) LightGray else DarkGray
+   @Composable
+   get() = if (isSystemInDarkTheme()) LightGray else DarkGray
 
 val Colors.descriptionColor
-    @Composable
-    get() = if (isSystemInDarkTheme()) LightGray.copy(alpha = 0.5f) else DarkGray.copy(alpha = 0.5f)
+   @Composable
+   get() = if (isSystemInDarkTheme()) LightGray.copy(alpha = 0.5f) else DarkGray.copy(alpha = 0.5f)
 
 val Colors.activeIndicatorColor
-    @Composable
-    get() = if (isSystemInDarkTheme()) Purple700 else Purple500
+   @Composable
+   get() = if (isSystemInDarkTheme()) Purple700 else Purple500
 
 val Colors.inactiveIndicatorColor
-    @Composable
-    get() = if (isSystemInDarkTheme()) DarkGray else LightGray
+   @Composable
+   get() = if (isSystemInDarkTheme()) DarkGray else LightGray
 
 val Colors.buttonBackgroundColor
-    @Composable
-    get() = if (isSystemInDarkTheme()) Purple700 else Purple500
+   @Composable
+   get() = if (isSystemInDarkTheme()) Purple700 else Purple500
 
 val Colors.topAppBarContentColor
-    @Composable
-    get() = if (isSystemInDarkTheme()) LightGray else Color.White
+   @Composable
+   get() = if (isSystemInDarkTheme()) LightGray else Color.White
 
 val Colors.topAppBarBackgroundColor
-    @Composable
-    get() = if (isSystemInDarkTheme()) Color.Black else Purple500
+   @Composable
+   get() = if (isSystemInDarkTheme()) Color.Black else Purple500
 

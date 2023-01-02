@@ -44,7 +44,8 @@ fun InfoBox(
          Text(
             text = text,
             fontSize = MaterialTheme.typography.h6.fontSize,
-            fontWeight = FontWeight.Black
+            fontWeight = FontWeight.Black,
+            color = textColor
          )
          Text(
             modifier = Modifier.alpha(ContentAlpha.medium),
